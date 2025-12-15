@@ -89,5 +89,19 @@ ZKS sits in a unique "High-Privacy, Low-Friction" quadrant.
 | WeTransfer | Low (Server Access) | High | Medium |
 | Signal | High | Medium (App Req.) | Low (File Limits) |
 
-## 5. Conclusion
+## 5. Protocol Extensibility & Future Applications
+
+ZKS is not merely a file transfer tool; it is a **Transport Layer Protocol** for secure data streaming. Any binary stream can be protected by the Split-Streamed Vernam Cipher.
+
+### 5.1 Real-Time Communication (RTC)
+*   **Secure Chat:** Text streams are lightweight and can be encrypted with negligible bandwidth cost.
+*   **Voice & Video:** UDP-based media streams can be XOR-encrypted in real-time. The "Key Node" simply acts as a high-throughput entropy pump.
+
+### 5.2 Internet of Things (IoT)
+*   **Critical Infrastructure:** For devices like pacemakers, power grid controllers, or autonomous vehicles, the "Bandwidth vs. Security" trade-off is acceptable. The mathematical certainty that a command cannot be forged or decrypted by a third party is paramount.
+
+### 5.3 Decentralized VPN
+*   **ZKS Tunnel:** Encapsulating IP packets within ZKS frames to create a VPN where the exit node (Relay) mathematically cannot know the content of the traffic, unlike Tor or VPN providers who rely on computational trust.
+
+## 6. Conclusion
 ZKS is indeed a new protocol. It formalizes a method for **Ephemeral, Multi-Key Mesh Sharing**. By decoupling the encryption keys from the data path and utilizing browser-native technologies, it democratizes "State-Level" privacy for the average user.
