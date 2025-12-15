@@ -47,6 +47,9 @@ The core innovation of ZKS is the separation of keys:
 
 Because the Relay Server never sees `KeyA`, and the Key Node never sees the file or `KeyA`, no single entity in the infrastructure possesses enough information to decrypt the data.
 
+### The Cost of Privacy
+This architecture requires streaming a key stream equal in size to the file. Sending a 1GB file consumes ~2GB of bandwidth. This is a deliberate trade-off: **we prioritize mathematical impossibility of decryption over bandwidth efficiency.**
+
 ### Mesh Swarm
 *   **Transport:** WebRTC DataChannels (SCTP).
 *   **Privacy:** Direct Peer-to-Peer transfer means data does not rest on any server.

@@ -111,7 +111,27 @@ async fn stream_random_key(ws: &WebSocket, total_size: usize) {
                             <li><strong>Memory Safety:</strong> Rust ensures we don't accidentally leak key data in memory.</li>
                         </ul>
 
-                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">3. The Swarm: WebRTC Mesh Networking</h2>
+                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">3. The Trade-off: Bandwidth vs. Security</h2>
+                        <p>
+                            You might ask: <em>"If I download a 1GB key to encrypt a 1GB file, doesn't that double my bandwidth usage?"</em>
+                        </p>
+                        <p>
+                            <strong>Yes, it does.</strong> To send a 1GB file, you consume ~2GB of data (1GB Key Stream + 1GB Encrypted Transfer).
+                        </p>
+                        <p>
+                            <strong>Why is this worth it?</strong><br />
+                            If you generate both keys locally, a compromised browser tab has everything it needs to decrypt your data. By streaming <code>Key B</code> from the server:
+                        </p>
+                        <ol className="list-decimal pl-6 space-y-2 my-4">
+                            <li><strong>Your Browser</strong> has the File + Key A.</li>
+                            <li><strong>The Server</strong> has Key B.</li>
+                            <li><strong>Neither side</strong> has the full picture.</li>
+                        </ol>
+                        <p>
+                            This enforces <strong>"Two-Party Consent"</strong> for decryption. Even if your device is compromised, the attacker cannot decrypt past files without the server's cooperation. In the world of high-threat privacy, bandwidth is a cheap price to pay for mathematical security.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">4. The Swarm: WebRTC Mesh Networking</h2>
                         <p>
                             ZKS doesn't store files. It streams them directly from Sender to Receiver.
                         </p>
