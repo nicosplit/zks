@@ -2,7 +2,7 @@
 
 **Architect & Lead Developer:** Md. Wasif Faisal
 
-![ZKS Logo](https://wzks.pages.dev/favicon.svg)
+<img src="https://wzks.pages.dev/favicon.svg" width="120" alt="ZKS Logo" />
 
 > **[📖 Read the Story: "The Death of Mass Surveillance"](docs/blog_post.md)**  
 > *How I built a "Split-Key" Mesh Protocol that makes file transfer mathematically private.*

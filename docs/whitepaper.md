@@ -11,6 +11,13 @@ The ZKS Protocol is a decentralized, application-layer communication protocol de
 
 It operates as a **Tunneling Protocol** on top of standard transport layers (WebRTC/SCTP and WebSocket/TCP). Unlike standard encryption protocols (TLS/SSL) which rely on computational complexity, ZKS enforces a **Split-Key Architecture** where the encryption stream (`Key B`) and the data stream (`Ciphertext`) are mathematically forced to travel through disjoint network paths, reassembling only at the endpoint.
 
+### 1.1 OSI Model Classification
+ZKS operates primarily at **Layer 7 (Application Layer)** of the OSI Model, while providing services traditionally associated with **Layer 6 (Presentation Layer)**.
+
+*   **Layer 7 (Application):** The ZKS Client (Browser/App) manages the logic of Key Streaming, Peer Coordination, and Data Packetization.
+*   **Layer 6 (Presentation):** The Vernam Cipher (XOR) handles the encryption and decryption of data formats (Text, Binary, Media) into a uniform secure stream.
+*   **Underlying Transport:** ZKS is transport-agnostic but currently runs over **WebRTC (UDP/TCP)** and **WebSockets (TCP)**, effectively tunneling its own secure protocol over existing Layer 7 infrastructure.
+
 ## 2. Core Concepts
 
 ### 2.1. The Vernam Split (KeyA + KeyB)
