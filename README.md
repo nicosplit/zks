@@ -4,6 +4,9 @@
 
 ![ZKS Logo](https://wzks.pages.dev/favicon.svg)
 
+> **[📖 Read the Story: "The Death of Mass Surveillance"](docs/blog_post.md)**  
+> *How I built a "Split-Key" Mesh Protocol that makes file transfer mathematically private.*
+
 ## Overview
 ZKS is a decentralized, application-layer communication protocol designed for secure, anonymous, and limit-free file sharing. It introduces a novel **Split-Streamed Vernam Cipher Approximation** over a **WebRTC Mesh Network**.
 
