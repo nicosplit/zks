@@ -1,0 +1,497 @@
+/* ZKS - Zero-Knowledge Swarm Styles */
+
+:root {
+  --primary: #00d9ff;
+  --primary-dark: #0099b3;
+  --bg-dark: #0a0a0f;
+  --bg-card: #12121a;
+  --bg-hover: #1a1a25;
+  --text: #ffffff;
+  --text-muted: #8888aa;
+  --success: #00ff88;
+  --error: #ff4466;
+  --border: #2a2a3a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  background: linear-gradient(135deg, var(--primary), #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+header .tagline {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+header .author {
+  color: var(--primary);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabs button:hover {
+  background: var(--bg-hover);
+}
+
+.tabs button.active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: var(--bg-dark);
+  font-weight: 600;
+}
+
+/* Mode Selector */
+.mode-selector {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  background: var(--bg-card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.mode-selector button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-selector button:hover {
+  background: var(--bg-hover);
+}
+
+.mode-selector button.active {
+  background: linear-gradient(135deg, #ff6b35, #ff3366);
+  color: white;
+  font-weight: 600;
+}
+
+/* Vernam Badge */
+.vernam-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(255, 51, 102, 0.2));
+  border: 1px solid rgba(255, 107, 53, 0.5);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #ff6b35;
+  margin-bottom: 1rem;
+}
+
+/* Security Info */
+.security-info {
+  background: rgba(0, 217, 255, 0.05);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.security-info p {
+  margin: 0.25rem 0;
+  color: var(--text-muted);
+}
+
+.share-file.vernam,
+.receive-file.vernam {
+  border: 1px solid rgba(255, 107, 53, 0.3);
+}
+
+.tabs button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabs button:hover {
+  background: var(--bg-hover);
+}
+
+.tabs button.active {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: var(--bg-dark);
+  font-weight: 600;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+}
+
+.share-file,
+.receive-file {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid var(--border);
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Drop Zone */
+.drop-zone {
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.drop-zone:hover,
+.drop-zone.dragging {
+  border-color: var(--primary);
+  background: rgba(0, 217, 255, 0.05);
+}
+
+.drop-zone p {
+  color: var(--text-muted);
+  margin: 0.5rem 0;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: var(--bg-dark);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: all 0.2s;
+}
+
+.file-input-label:hover {
+  background: var(--primary-dark);
+}
+
+.file-input-label input {
+  display: none;
+}
+
+/* Progress Bar */
+.progress-bar {
+  margin-top: 1.5rem;
+  background: var(--bg-hover);
+  border-radius: 8px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--success));
+  transition: width 0.2s;
+}
+
+.progress-bar span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+  z-index: 1;
+}
+
+/* Link Result */
+.link-result {
+  text-align: center;
+}
+
+.link-result p {
+  margin-bottom: 1rem;
+}
+
+.link-box {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.link-box input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-hover);
+  color: var(--text);
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.link-box button {
+  padding: 0.75rem 1rem;
+  background: var(--primary);
+  color: var(--bg-dark);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.link-box button:hover {
+  background: var(--primary-dark);
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+/* Link Input */
+.link-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.link-input input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-hover);
+  color: var(--text);
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.link-input input::placeholder {
+  color: var(--text-muted);
+}
+
+.link-input button {
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: var(--bg-dark);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.link-input button:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.link-input button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Download Complete */
+.download-complete {
+  text-align: center;
+  color: var(--success);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.privacy-badge {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.privacy-badge span {
+  padding: 0.5rem 1rem;
+  background: rgba(0, 217, 255, 0.1);
+  border: 1px solid rgba(0, 217, 255, 0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--primary);
+}
+
+.disclaimer {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Status Indicator */
+.status-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  color: var(--success);
+}
+
+.status-indicator.offline {
+  background: rgba(255, 68, 102, 0.1);
+  border: 1px solid rgba(255, 68, 102, 0.3);
+  color: var(--error);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--success);
+  animation: pulse 2s infinite;
+}
+
+.status-dot.offline {
+  background: var(--error);
+  animation: none;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Error Message */
+.error-message {
+  padding: 0.75rem 1rem;
+  background: rgba(255, 68, 102, 0.1);
+  border: 1px solid rgba(255, 68, 102, 0.3);
+  border-radius: 8px;
+  color: var(--error);
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Success Text */
+.success {
+  color: var(--success);
+  margin-top: 1rem;
+}
+
+/* Source Breakdown (P2P vs Relay) */
+.source-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.source {
+  position: relative;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.source-bar {
+  height: 100%;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.source.relay .source-bar {
+  background: linear-gradient(90deg, #4a9eff, #357abd);
+}
+
+.source.p2p .source-bar {
+  background: linear-gradient(90deg, #4ade80, #22c55e);
+}
+
+.source span {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.75rem;
+  font-size: 0.85rem;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}

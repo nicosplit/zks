@@ -1,0 +1,15 @@
+{
+  "name": "zks-wasm",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "zks_wasm_bg.wasm",
+    "zks_wasm.js",
+    "zks_wasm.d.ts"
+  ],
+  "main": "zks_wasm.js",
+  "types": "zks_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
