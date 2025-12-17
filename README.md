@@ -27,6 +27,7 @@ Traffic is encrypted using a distributed variant of the One-Time Pad.
 ### 3. Swarm Entropy Tax
 We do not trust centralized RNGs (like Cloudflare LavaRand).
 *   **Mechanism**: Every peer in the network contributes random noise (entropy).
+*   **Global Entropy Pool**: The Relay harvests entropy from **all** connected users across the entire network, not just your specific room. This ensures that even a private 2-person session draws randomness from thousands of strangers, maintaining trustlessness.
 *   **Result**: The "Remote Key" is a product of thousands of random computers, making it impossible to predict or rig.
 
 ### 🛡️ Quantum-Proof Security
