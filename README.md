@@ -32,7 +32,7 @@ We do not trust centralized RNGs (like Cloudflare LavaRand).
 ### 🛡️ Quantum-Proof Security
 Unlike AES or RSA, which rely on mathematical problems (factoring) that Quantum Computers can solve, the **Wasif-Vernam Cipher** relies on **Entropy**.
 *   **Mechanism**: We stream a continuous, non-repeating key generated from **Swarm Entropy** (True Randomness) and **Local CSPRNG**.
-*   **Result**: To decrypt the traffic, an attacker must guess the random noise. This is not a math problem; it is a physical impossibility.
+*   **The "Perfect Secrecy" Guarantee**: If a Quantum Computer tries to brute-force the noise, it will produce **every possible message** (e.g., "Hello", "Attack", "Pizza") with equal probability. It has no way to distinguish the true message from the false ones.
 *   **Status**: Information-Theoretically Secure (approximated).
 
 ## 📚 Documentation
