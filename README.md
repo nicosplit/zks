@@ -29,6 +29,12 @@ We do not trust centralized RNGs (like Cloudflare LavaRand).
 *   **Mechanism**: Every peer in the network contributes random noise (entropy).
 *   **Result**: The "Remote Key" is a product of thousands of random computers, making it impossible to predict or rig.
 
+### 🛡️ Quantum-Proof Security
+Unlike AES or RSA, which rely on mathematical problems (factoring) that Quantum Computers can solve, the **Wasif-Vernam Cipher** relies on **Entropy**.
+*   **Mechanism**: We stream a continuous, non-repeating key generated from **Swarm Entropy** (True Randomness) and **Local CSPRNG**.
+*   **Result**: To decrypt the traffic, an attacker must guess the random noise. This is not a math problem; it is a physical impossibility.
+*   **Status**: Information-Theoretically Secure (approximated).
+
 ## 📚 Documentation
 *   **[Protocol Specification](docs/ZKS-Revised_Protocol.md)**: The "Bible" of ZKS.
 *   **[Deep Analysis](docs/DEEP_ANALYSIS.md)**: Comparison vs Tor/I2P.
